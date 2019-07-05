@@ -1,0 +1,35 @@
+<div class="container">
+  <h3>Select Movie</h3>
+      <mat-form-field>
+        <mat-label>Movie</mat-label>
+        <mat-select [(value)]="selectedMovie">
+          <mat-option *ngFor="let movie of movie" [value]="movie.viewValue" (click)="onSelect(movie.viewValue)">
+            {{movie.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h3>Select Show Timing</h3>
+      <mat-form-field>
+        <mat-label>Timing</mat-label>
+        <mat-select  [(value)]="selectedTime">
+          <mat-option *ngFor="let show of shows" [value]="show.time">
+            {{show.time}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  <div class="person">
+    <h3>No of Persons</h3>
+    <button mat-flat-button color="accent" (click)="decrementPerson()">
+      -
+    </button>
+    <span> {{person_count}}</span>
+    <button mat-flat-button color="primary" (click)="incrementPerson()">
+      +
+    </button>
+  </div>
+
+  
+    <button class="btn" mat-raised-button color="primary" (click)="onBookNow()">BookNow</button>
+  
+</div>

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+/*home*/
+.card {
+  margin-left: 150px;
+  margin-right: 150px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-image {
+    background-image: url('../../MovieBookingApp/src/assets/images/header.jpg');
+    background-size: cover;
+  }
+ 
+/*bookmovie*/
+div{
+  width: 100%;
+  
+}
+.btn {
+  margin-right: 8px;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  width: 100%;
+}
+.person{
+  margin-bottom: 20px;
+}
+/*moviestatus*/
+table {
+  width: 100%;
+}

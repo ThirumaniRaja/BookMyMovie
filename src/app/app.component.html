@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1>BookMyMovie</h1>
+        <span class="toolbar-spacer"></span>
+        <span class="toolbar-text" [routerLink]="['/home']">Home</span>
+        <span class="toolbar-text"[routerLink]="['/bookMovie']">BookingMovie</span>
+        <span class="toolbar-text"[routerLink]="['/bookings']">BookingStatus</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
